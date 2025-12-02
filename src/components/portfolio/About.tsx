@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { GraduationCap, MapPin, Code } from "lucide-react";
 
 const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "UI/UX Design", level: 80 },
-  { name: "Three.js", level: 75 },
+  { name: "React / TypeScript", level: 95 },
+  { name: "Python / Java", level: 90 },
+  { name: "Node.js / Express", level: 88 },
+  { name: "PostgreSQL / MongoDB", level: 85 },
+  { name: "REST APIs / FastAPI", level: 90 },
+];
+
+const techStack = [
+  "JavaScript", "TypeScript", "Python", "Java", "C/C++", "Golang",
+  "React", "Node.js", "Express.js", "TailwindCSS", "FastAPI",
+  "PostgreSQL", "MongoDB", "Firebase", "Git", "Linux"
 ];
 
 const About = () => {
@@ -30,7 +37,7 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-16" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Text content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -38,19 +45,48 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">
-              A Developer Who Sees Beyond
+              Software Engineer & Problem Solver
             </h3>
+            
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <GraduationCap className="text-primary" size={20} />
+                <span className="font-body">UNC Charlotte - BS Computer Science (GPA: 3.84)</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <MapPin className="text-secondary" size={20} />
+                <span className="font-body">Charlotte, NC</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Code className="text-primary" size={20} />
+                <span className="font-body">Software Engineering Concentration</span>
+              </div>
+            </div>
+
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
-              Like the wielder of powerful dōjutsu, I perceive the intricate patterns 
-              in code that others might miss. My journey in development has been one 
-              of continuous evolution, mastering new techniques and pushing the 
-              boundaries of what's possible.
+              I'm a passionate software engineer with experience building full-stack applications, 
+              implementing secure authentication systems, and developing AI-powered tools. 
+              Currently interning at Kithli, leading React development for member booking flows.
             </p>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              I specialize in creating immersive web experiences that captivate users 
-              and deliver exceptional performance. Every project is an opportunity to 
-              demonstrate precision, creativity, and technical excellence.
+              With a strong foundation in data structures, algorithms, and software engineering 
+              principles, I focus on creating scalable, performant solutions that make a real impact.
             </p>
+
+            {/* Tech stack tags */}
+            <div className="mt-8">
+              <h4 className="font-display text-lg font-semibold mb-4 text-foreground">Tech Stack</h4>
+              <div className="flex flex-wrap gap-2">
+                {techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-muted rounded-full text-sm font-body text-muted-foreground hover:bg-primary/20 hover:text-primary transition-colors"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           </motion.div>
 
           {/* Skills */}
@@ -60,6 +96,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6"
           >
+            <h4 className="font-display text-lg font-semibold mb-6 text-foreground">Core Skills</h4>
             {skills.map((skill, index) => (
               <div key={skill.name}>
                 <div className="flex justify-between mb-2">

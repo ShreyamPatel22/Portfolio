@@ -5,6 +5,7 @@ import Sharingan from "../eyes/Sharingan";
 
 const navItems = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -33,7 +34,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <Sharingan size={36} isAnimating={false} />
-          <span className="font-display font-bold text-xl text-foreground">Portfolio</span>
+          <span className="font-display font-bold text-xl text-foreground">SP</span>
         </a>
 
         {/* Desktop Nav */}
@@ -48,6 +49,13 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-300" />
             </a>
           ))}
+          <a
+            href="/Shreyam_Resume.pdf"
+            target="_blank"
+            className="px-4 py-2 border border-primary text-primary font-body text-sm rounded-lg hover:bg-primary hover:text-primary-foreground transition-all"
+          >
+            Resume
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -78,6 +86,13 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href="/Shreyam_Resume.pdf"
+              target="_blank"
+              className="px-4 py-2 border border-primary text-primary font-body text-sm rounded-lg hover:bg-primary hover:text-primary-foreground transition-all text-center"
+            >
+              Resume
+            </a>
           </div>
         </motion.div>
       )}

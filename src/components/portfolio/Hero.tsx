@@ -41,9 +41,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <span className="text-glow-red">Creative</span>
+          <span className="text-glow-red">Shreyam</span>
           <br />
-          <span className="text-glow-purple">Developer</span>
+          <span className="text-glow-purple">Patel</span>
         </motion.h1>
 
         <motion.p
@@ -52,7 +52,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Crafting digital experiences with the precision of a thousand techniques
+          Software Engineer crafting exceptional digital experiences with precision and creativity
         </motion.p>
 
         <motion.div
