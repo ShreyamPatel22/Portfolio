@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Linkedin, Github } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 px-6 relative">
+    <section id="contact" className="py-32 px-6 bg-muted/10 relative">
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
@@ -34,35 +34,78 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
           <p className="text-center text-muted-foreground font-body text-lg mb-16 max-w-2xl mx-auto">
-            Ready to collaborate on your next project? Let's create something extraordinary together.
+            Looking for internship opportunities or want to collaborate? Let's connect!
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-5 gap-12">
           {/* Contact Info */}
           <motion.div
-            className="md:col-span-2 space-y-8"
+            className="md:col-span-2 space-y-6"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-primary/20 rounded-lg">
+            <a 
+              href="mailto:spate301@charlotte.edu"
+              className="flex items-start gap-4 group"
+            >
+              <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
                 <Mail className="text-primary" size={24} />
               </div>
               <div>
                 <h4 className="font-display font-semibold text-foreground mb-1">Email</h4>
-                <p className="text-muted-foreground font-body">hello@portfolio.dev</p>
+                <p className="text-muted-foreground font-body text-sm group-hover:text-primary transition-colors">
+                  spate301@charlotte.edu
+                </p>
               </div>
-            </div>
+            </a>
+
+            <a 
+              href="tel:+19197208091"
+              className="flex items-start gap-4 group"
+            >
+              <div className="p-3 bg-secondary/20 rounded-lg group-hover:bg-secondary/30 transition-colors">
+                <Phone className="text-secondary" size={24} />
+              </div>
+              <div>
+                <h4 className="font-display font-semibold text-foreground mb-1">Phone</h4>
+                <p className="text-muted-foreground font-body text-sm group-hover:text-secondary transition-colors">
+                  (919) 720-8091
+                </p>
+              </div>
+            </a>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-secondary/20 rounded-lg">
-                <MapPin className="text-secondary" size={24} />
+              <div className="p-3 bg-primary/20 rounded-lg">
+                <MapPin className="text-primary" size={24} />
               </div>
               <div>
                 <h4 className="font-display font-semibold text-foreground mb-1">Location</h4>
-                <p className="text-muted-foreground font-body">Hidden Leaf Village</p>
+                <p className="text-muted-foreground font-body text-sm">Charlotte, NC</p>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="pt-6 border-t border-border">
+              <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
+              <div className="flex gap-4">
+                <a
+                  href="https://linkedin.com/in/shreyam-patel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-muted rounded-lg hover:bg-secondary/20 transition-colors group"
+                >
+                  <Linkedin className="text-muted-foreground group-hover:text-secondary" size={20} />
+                </a>
+                <a
+                  href="https://github.com/shreyam-patel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-muted rounded-lg hover:bg-primary/20 transition-colors group"
+                >
+                  <Github className="text-muted-foreground group-hover:text-primary" size={20} />
+                </a>
               </div>
             </div>
           </motion.div>
