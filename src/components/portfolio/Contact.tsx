@@ -90,8 +90,8 @@ const Contact = () => {
             <div className="pt-6 border-t border-border">
               <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
               <div className="flex gap-4">
-                <a
-                  href="https://linkedin.com/in/shreyam-patel"
+              <a
+                  href="https://linkedin.com/in/shreyampatel2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-muted rounded-lg hover:bg-secondary/20 transition-colors group"
@@ -99,7 +99,7 @@ const Contact = () => {
                   <Linkedin className="text-muted-foreground group-hover:text-secondary" size={20} />
                 </a>
                 <a
-                  href="https://github.com/shreyam-patel"
+                  href="https://github.com/ShreyamPatel22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-muted rounded-lg hover:bg-primary/20 transition-colors group"
