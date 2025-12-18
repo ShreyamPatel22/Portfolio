@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Shreyam Patel — Portfolio Website
 
 ## Project info
 
