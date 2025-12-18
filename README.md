@@ -7,7 +7,7 @@ This is my personal portfolio website showcasing my projects, experience, and sk
 The initial project scaffold was generated using Lovable, and the site has been customized locally using modern frontend tooling and best practices.
 
 ### Live Site
-Example: https://shreyam-patel.vercel.app
+https://shreyam-portfolio-ivory.vercel.app
 
 
 ### Tech Stack 
