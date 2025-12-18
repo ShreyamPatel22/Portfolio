@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <p className="text-muted-foreground font-body text-sm">
-          © 2024 Shreyam Patel. All rights reserved.
+          © {new Date().getFullYear()} Shreyam Patel. All rights reserved.
         </p>
       </div>
     </footer>
