@@ -51,7 +51,7 @@ const About = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <GraduationCap className="text-primary" size={20} />
-                <span className="font-body">UNC Charlotte - BS Computer Science (GPA: 3.84)</span>
+                <span className="font-body">UNC Charlotte - BS Computer Science (GPA: 3.87)</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="text-secondary" size={20} />
