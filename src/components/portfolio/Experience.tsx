@@ -7,7 +7,7 @@ const experiences = [
   {
     company: "Kithli",
     role: "Software Engineer Intern",
-    period: "Aug 2025 - Present",
+    period: "Aug 2025 - Dec 2025",
     highlights: [
       "Led development of member booking flow across 7 React screens",
       "Optimized frontend forms, cutting error rate by 40%",
