@@ -34,7 +34,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8" />
           <p className="text-center text-muted-foreground font-body text-lg mb-16 max-w-2xl mx-auto">
-            Looking for internship opportunities or want to collaborate? Let's connect!
+            Always open to new opportunities, collaborations, and interesting conversations.
           </p>
         </motion.div>
 
