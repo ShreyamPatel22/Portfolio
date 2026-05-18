@@ -5,24 +5,45 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "Kithli",
+    company: "TranQuility Inc.",
     role: "Software Engineer Intern",
-    period: "Aug 2025 - Dec 2025",
+    period: "Mar 2026 - May 2026",
     highlights: [
-      "Led development of member booking flow across 7 React screens",
-      "Optimized frontend forms, cutting error rate by 40%",
-      "Improved navigation speed by 35% through dynamic routing"
+      "Contributed to full-stack features for a startup platform, collaborating with engineers to build scalable application components",
+      "Implemented and debugged RESTful API endpoints and backend logic to support core platform functionality"
     ],
     color: "primary"
   },
   {
-    company: "Legacy Leadership Institute",
+    company: "Klees ABC & Party Mart",
+    role: "Software Engineer · Freelance",
+    period: "Jan 2026 - May 2026",
+    highlights: [
+      "Built and maintained internal systems supporting retail operations and impacting real customers and revenue",
+      "Designed and deployed a responsive website improving mobile usability and page load performance by ~30%",
+      "Applied secure coding and database design principles across all deliverables"
+    ],
+    color: "secondary"
+  },
+  {
+    company: "Kithli",
+    role: "Software Engineer Intern",
+    period: "Aug 2025 - Dec 2025",
+    highlights: [
+      "Enhanced the booking experience by building Kithli's core booking system, a crucial platform feature for member scheduling",
+      "Connected outpatients with post-procedure companions, creating supportive community-driven patient experiences",
+      "Collaborated with designers and engineers to refine usability and ensure product vision translated into real-world functionality"
+    ],
+    color: "primary"
+  },
+  {
+    company: "Momentum360™",
     role: "Software Engineer Intern",
     period: "May 2025 - Aug 2025",
     highlights: [
-      "Implemented OAuth 2.0, 2FA, and reCAPTCHA reducing fraud by 30%",
-      "Engineered RESTful APIs improving response time by 25%",
-      "Built admin dashboard accelerating issue resolution by 40%"
+      "Developed a secure, scalable login system for the MentorMe Vault platform",
+      "Integrated Google OAuth 2.0 for streamlined user authentication and implemented 2FA to strengthen account security",
+      "Added Google reCAPTCHA to detect and block automated bots"
     ],
     color: "secondary"
   },
@@ -31,9 +52,9 @@ const experiences = [
     role: "Student Intern",
     period: "Sep 2024 - Apr 2025",
     highlights: [
-      "Analyzed 350+ startup pitches influencing 20+ investments",
-      "Built dashboards reducing trend analysis time by 35%",
-      "Automated tasks eliminating 15+ hours of manual work"
+      "Analyzed 150+ startup pitches evaluating market fit, scalability, and competitive edge using internal tracking tools",
+      "Conducted market research using Python for web scraping and SQL for data querying",
+      "Assisted in automating the pitch evaluation pipeline using scripts and templates to improve consistency and speed"
     ],
     color: "primary"
   },
@@ -42,11 +63,20 @@ const experiences = [
     role: "AI Training & Evaluation Intern",
     period: "Sep 2024 - Dec 2024",
     highlights: [
-      "Evaluated 120+ AI outputs improving model accuracy by 6-8%",
-      "Reduced reasoning errors by ~10% through technical feedback",
-      "Improved prompt reliability by 8-12% via QA annotations"
+      "Reviewed and refined generative AI outputs to improve model performance on STEM-related writing tasks",
+      "Provided structured technical feedback on AI-generated explanations in math, computer science, and data science",
+      "Collaborated asynchronously with AI trainers and developers in an agile workflow"
     ],
     color: "secondary"
+  },
+  {
+    company: "Best Western Hotels & Resorts",
+    role: "Team Manager · Part-time",
+    period: "Jan 2023 - Aug 2024",
+    highlights: [
+      "Managed team operations and coordinated staff across shifts in a fast-paced hospitality environment"
+    ],
+    color: "primary"
   }
 ];
 

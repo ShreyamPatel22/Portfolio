@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Cpu, Film } from "lucide-react";
+import { Github, Cpu, Film, ShoppingBag } from "lucide-react";
 
 const projects = [
+  {
+    title: "Klees ABC & Party Mart",
+    subtitle: "Client Website — Software Engineer",
+    description: "Designed and deployed a responsive website for a local retail client, improving mobile usability and page load performance by ~30%. Supports 50+ product listings with streamlined contact flows.",
+    tags: ["React", "TailwindCSS", "TypeScript", "Responsive Design"],
+    icon: ShoppingBag,
+    color: "secondary",
+    date: "Jan 2026 - Present"
+  },
   {
     title: "LifeLens",
     subtitle: "AI Emergency Detection Tool",
@@ -16,7 +25,7 @@ const projects = [
   {
     title: "Movie Recommendation System",
     subtitle: "Personalized Recommendations Engine",
-    description: "Modular Express.js engine that generates personalized movie recommendations with session persistence and smart filtering",
+    description: "Modular Express.js engine that generates personalized movie recommendations with session-based state persistence and REST API endpoints for user preferences",
     tags: ["Express.js", "Node.js", "JavaScript", "REST API"],
     icon: Film,
     color: "secondary",
@@ -44,7 +53,7 @@ const Projects = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-16" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
@@ -103,13 +112,6 @@ const Projects = () => {
                     </div>
 
                     <div className="flex gap-4">
-                      <a
-                        href="#"
-                        className="flex items-center gap-2 text-foreground hover:text-primary transition-colors font-body text-sm"
-                      >
-                        <ExternalLink size={16} />
-                        <span>Live Demo</span>
-                      </a>
                       <a
                         href="#"
                         className="flex items-center gap-2 text-foreground hover:text-secondary transition-colors font-body text-sm"

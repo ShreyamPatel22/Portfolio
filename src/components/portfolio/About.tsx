@@ -12,7 +12,7 @@ const skills = [
 ];
 
 const techStack = [
-  "JavaScript", "TypeScript", "Python", "Java", "C/C++", "Golang",
+  "JavaScript", "TypeScript", "Python", "Java", "C#", "C/C++", "Golang",
   "React", "Node.js", "Express.js", "TailwindCSS", "FastAPI",
   "PostgreSQL", "MongoDB", "Firebase", "Git", "Linux"
 ];
@@ -51,7 +51,7 @@ const About = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <GraduationCap className="text-primary" size={20} />
-                <span className="font-body">UNC Charlotte - BS Computer Science (GPA: 3.87)</span>
+                <span className="font-body">UNC Charlotte - BS Computer Science (GPA: 3.89)</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="text-secondary" size={20} />
@@ -64,9 +64,9 @@ const About = () => {
             </div>
 
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
-              I'm a passionate software engineer with experience building full-stack applications, 
-              implementing secure authentication systems, and developing AI-powered tools. 
-              Currently interning at Kithli, leading React development for member booking flows.
+              I'm a passionate software engineer with experience building full-stack applications,
+              implementing secure authentication systems, and developing AI-powered tools.
+              Most recently interned at TranQuility, contributing to full-stack features for a startup platform.
             </p>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
               With a strong foundation in data structures, algorithms, and software engineering 

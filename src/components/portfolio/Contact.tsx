@@ -47,7 +47,7 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a 
-              href="mailto:spate301@charlotte.edu"
+              href="mailto:shreyampatel.dev@gmail.com"
               className="flex items-start gap-4 group"
             >
               <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
@@ -56,7 +56,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-display font-semibold text-foreground mb-1">Email</h4>
                 <p className="text-muted-foreground font-body text-sm group-hover:text-primary transition-colors">
-                  spate301@charlotte.edu
+                  shreyampatel.dev@gmail.com
                 </p>
               </div>
             </a>
